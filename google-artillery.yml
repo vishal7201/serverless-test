@@ -1,0 +1,9 @@
+config:
+  target: 'https://us-central1-functions-performance-testing.cloudfunctions.net'
+  phases:
+    - duration: 600
+      arrivalRate: 20
+scenarios:
+  - flow:
+    - get:
+        url: "/http"

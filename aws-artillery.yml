@@ -1,0 +1,9 @@
+config:
+  target: ' https://it4sy2l480.execute-api.us-east-1.amazonaws.com/dev'
+  phases:
+    - duration: 600
+      arrivalRate: 20
+scenarios:
+  - flow:
+    - get:
+        url: "/hello"
